@@ -1,0 +1,20 @@
+version: '3.8'
+services:
+  app:
+    container_name: go.service
+    image: "go-fiber-api:v.0.1"
+    environment:
+      PORT: 3000
+      DB_PG_HOST: localhost
+      DB_PG_USER: pgadmin
+      DB_PG_PASSWORD: 'P@ssw0rd#'
+      DB_PG_NAME: postgres
+      DB_PG_PORT: 5432 
+    ports:
+      - "8080:8080"
+    volumes:
+      - "/app:/app"
+networks:
+    default:
+        external: true
+        name: joko_network
