@@ -17,4 +17,4 @@ This repository contains a simple CRUD application built with Go Fiber using the
 - **Docker** (Optional): If you want to run the application in a container.
 
 ##
-**Let me know if you need additional sections or changes to this template!**
+**Let me know if you need additional sections!**
